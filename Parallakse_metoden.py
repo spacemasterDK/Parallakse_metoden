@@ -17,6 +17,7 @@ import numpy as np
 
 def afstands_måler(Radius_planet,Målte_radius,Radius_omløb, Vinkel_sol_jord, Io_midtpunkt, Skygge_midtpunkt, samme_side = False):
     
+    Vinkel_sol_jord = Vinkel_sol_jord*(2*np.pi/360)
     
     Radius_i_km = Radius_planet*(Radius_omløb/Målte_radius)
     
